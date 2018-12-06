@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,130 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+							<img width="300" height="300" data-src="./img/React-icon.svg"><br>
+							<h3>REACT.js</h3><br>
+							<p>by Viachaslau Lapitski</p>
+					</section>
+					<section>
+						<p>React is a JavaScript library for building user interfaces.
+							 It is maintained by Facebook and a community of individual developers and companies.</p>
+					<p class="fragment">React can be used as a base in the development of single-page or mobile applications.
+						 Complex React applications usually require the use of additional libraries for state management, routing, and interaction with an API.</p>
+					</section>
+					<section>
+						<h3>Companies using React</h3>
+						<div class="fragment">
+							<img width="200" height="200" src="img/facebook.png">
+							<img width="200" height="200" src="img/instagram.jpg">
+							<img width="200" height="200" src="img/netflix.png">
+							<img width="200" height="200" src="img/apple.png">
+							<img width="200" height="200" src="img/whatsapp.jpg">
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>REACT features</h3>
+						<ul>
+							<li class="fragment">Component based</li>
+							<li class="fragment">JSX</li>
+							<li class="fragment">Virtual DOM</li>
+							<li class="fragment">Single-way data flow</li>
+							<li class="fragment">React Native</li>
+						</ul>
+					</section>	
+				</section>
+				<section>
+					<section>
+						JSX
+					</section>
+					<section>
+							<pre><code class="hljs" data-trim contenteditable>
+									const element = <h1>Hello, world!</h1>;
+							</code></pre>
+							<p class="fragment">Babel compiles it to..</p>
+							<pre class="fragment"><code class="hljs" data-trim contenteditable>
+									const element = React.createElement(
+										'h1',
+										'Hello, world!'
+									);
+							</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						Simple Component
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+		class HelloMessage extends React.Component {
+		  render() {
+		    return (
+		      <div>
+			      Hello {this.props.name}
+		      </div>
+	      );
+	    }
+	  }
+		
+		ReactDOM.render(
+			<HelloMessage name="Taylor" />,
+			mountNode
+		);
+						</code></pre>
+					</section>
+					<section>
+						Functions..
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+								function Welcome(props) {
+									return <h1>Hello, {props.name}</h1>;
+								}
+						</code></pre>
+						<p class="fragment">Classes..</p>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+								class Welcome extends React.Component {
+									render() {
+										return <h1>Hello, {this.props.name}</h1>;
+									}
+								}
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					Virtual DOM
+					<img class="fragment" src="img/dom.png">
+				</section>
+				<section>
+					Data bindings in React
+					<img class="fragment" width="800" height="500" src="img/data-binding.jpg">
+				</section>
+				<section>
+					<section>
+						React Native
+						<img src="img/react-native.png">
+					</section>
+					<section>
+						This apps use React Native
+						<div class="fragment">
+							<img width="200" height="200" src="img/airbnb.jpg">
+							<img width="200" height="200" src="img/discord.jpg">
+							<img width="200" height="200" src="img/skype.jpg">
+						</div>
+					</section>
+				</section>
+				<section>
+					<h3>Conclusion</h3>
+					<ul>
+						<li class="fragment">Easy to learn</li>
+						<li class="fragment">React+Redux=&#x1f499</li>
+						<li class="fragment">PropTypes</li>
+						<li class="fragment">Testability</li>
+						<li class="fragment">Performance</li>
+					</ul>
+				</section>
+				<section>
+					Thanks for watching.
+				</section>
 			</div>
 		</div>
 
